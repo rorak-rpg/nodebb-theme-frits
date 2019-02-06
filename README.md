@@ -1,2 +1,3 @@
-# nodebb-theme-frits
-NodeBB theme for Rorak
+# NodeBB theme for Rorak
+
+Coming soon™!

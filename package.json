@@ -1,0 +1,10 @@
+{
+  "name": "nodebb-theme-frits",
+  "version": "0.0.0",
+  "description": "NodeBB theme for Rorak",
+  "main": "theme.less",
+  "keywords": [
+
+  ],
+  "license": "MIT"
+}
