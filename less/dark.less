@@ -479,12 +479,40 @@ body {
         color: #333;
     }
 
-    .slideout-menu .chat-list {
-
+    .chat-modal {
+        color: #333;
     }
 
-    .slideout-menu .chat-list > li.no_active a {
-        
+    &.page-user-chats .chats-full {
+        padding-top: 181px;
+    }
+
+    &.page-user-chats {
+        padding-bottom: 0;
+        .frits.container-footer {
+            display: none;
+        }
+    }
+
+    .expanded-chat .chat-content li.chat-message .message-body-wrapper:hover .message-body {
+        background: #222;
+        border-radius: 2px;
+
+        .btn-link {
+            color: #eee;
+        }
+    }
+
+    [component="chat/recent"] .bg-info {
+        background-color: #333;
+    }
+
+    [component="chat/recent"] .unread {
+        color: #333;
+    }
+
+    .expanded-chat .chat-content li.chat-message .chat-user a {
+        color: #eee;
     }
 }
 
