@@ -1,5 +1,8 @@
 body {
     padding-top: 260px;
+    color: #eee; 
+    padding-bottom: 300px;
+    min-height: 1500px; // temporary
 }
 
 .forum-title {
@@ -272,13 +275,17 @@ body.loaded {
 
 .frits.container-footer {
     overflow: hidden;
-    position: relative;
+    position: fixed;
+    bottom: -50px;
+    width: 100%;
+    height: 300px;
 
     .frontpanel {
         background: url(plugins/nodebb-theme-frits/assets/footer/frontpanel.png) no-repeat;
         background-size: cover;
         width: 100%;
         height: 257px;
+        position: absolute;
     }
 
     .backpanel {
