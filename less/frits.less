@@ -281,7 +281,7 @@ body.loaded {
 .frits.container-footer {
     overflow: hidden;
     position: fixed;
-    bottom: -200px;
+    bottom: -100px;
     width: 100%;
     height: 300px;
     transition: all ease-out 0.5s;
@@ -296,16 +296,16 @@ body.loaded {
         transition: all ease-out 0.5s;
         -webkit-transition: all ease-out 0.5s;
 
-        width: ~"calc(100% + 400px)";
-        background-position-x: -200px;
+        width: ~"calc(100% + 200px)";
+        background-position-x: -100px;
     }
 
     &.minimized {
-        bottom: -100px;
+        bottom: -200px;
 
         .frontpanel {
-            width: ~"calc(100% + 200px)";
-            background-position-x: -100px;
+            width: ~"calc(100% + 400px)";
+            background-position-x: -200px;
         }
     }
 
