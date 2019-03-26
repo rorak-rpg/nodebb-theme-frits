@@ -456,8 +456,12 @@ body {
         color: #eee;
     }
 
-    #header-menu .navbar-nav > li > a, #header-menu .forum-title, #header-menu .btn-link {
-        background: none !important;
+    #header-menu .forum-title, #header-menu .btn-link {
+        background-color: none !important;
+    }
+
+    #header-menu .navbar-nav > li.active > a {
+        background-color: rgba(0,0,0,0.1) !important;
     }
 
     .well {
@@ -513,6 +517,11 @@ body {
 
     .expanded-chat .chat-content li.chat-message .chat-user a {
         color: #eee;
+    }
+
+    .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus,
+    .navbar-default .navbar-nav > .open > label, .navbar-default .navbar-nav > .open > label:hover, .navbar-default .navbar-nav > .open > label:focus {
+        background-color: rgba(0,0,0,0.1);
     }
 }
 
