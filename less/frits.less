@@ -1,8 +1,7 @@
 body {
     padding-top: 260px;
     color: #eee; 
-    padding-bottom: 300px;
-    min-height: 1500px; // temporary
+    padding-bottom: 150px;
 }
 
 .forum-title {
@@ -93,6 +92,7 @@ body.loaded {
         box-shadow: 0 0 4px #000;
         margin-top: 0px;
         transition: all ease-out 0.5s;
+        -webkit-transition: all ease-out 0.5s;
     }
 
     .gear-l {
@@ -111,6 +111,7 @@ body.loaded {
         margin-top: -68px;
         position: relative;
         transition: all ease-out 0.5s;
+        -webkit-transition: all ease-out 0.5s;
     }
 
     .gear-detach-window {
@@ -120,6 +121,7 @@ body.loaded {
         box-shadow: 0 0 4px #000;
         border-bottom: 1px solid #000;
         transition: all ease-out 0.5s;
+        -webkit-transition: all ease-out 0.5s;
     }
 
     .animated-gears-l {
@@ -213,6 +215,7 @@ body.loaded {
     background: none;
     border: none;
     transition: all ease-out 0.5s;
+    -webkit-transition: all ease-out 0.5s;
 
     .navbar-nav > li > a, .forum-title, .btn-link {
         color: #e2e2e2;
@@ -244,6 +247,7 @@ body.loaded {
         opacity: 1;
         animation: none;
         transition: none;
+        -webkit-transition: none;
 
         &.minimized {
             top: 8px !important;
@@ -262,6 +266,7 @@ body.loaded {
     .frits.container-header.minimized {
         .gear-detach-window {
             transition: none;
+            -webkit-transition: none;
             height: 69px;
         }
 
@@ -276,9 +281,11 @@ body.loaded {
 .frits.container-footer {
     overflow: hidden;
     position: fixed;
-    bottom: -50px;
+    bottom: -200px;
     width: 100%;
     height: 300px;
+    transition: all ease-out 0.5s;
+    -webkit-transition: all ease-out 0.5s;
 
     .frontpanel {
         background: url(plugins/nodebb-theme-frits/assets/footer/frontpanel.png) no-repeat;
@@ -286,6 +293,20 @@ body.loaded {
         width: 100%;
         height: 257px;
         position: absolute;
+        transition: all ease-out 0.5s;
+        -webkit-transition: all ease-out 0.5s;
+
+        width: ~"calc(100% + 200px)";
+        background-position-x: -100px;
+    }
+
+    &.minimized {
+        bottom: -100px;
+
+        .frontpanel {
+            width: ~"calc(100% + 400px)";
+            background-position-x: -200px;
+        }
     }
 
     .backpanel {
